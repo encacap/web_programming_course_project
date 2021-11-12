@@ -1,15 +1,15 @@
 <?php
-	session_start();
+session_start();
 
-	require_once('../../utils/utility.php');
-	require_once('../../database/dbhelper.php');
-	require_once('process_form_register.php');
+require_once "../../utils/utility.php";
+require_once "../../database/dbhelper.php";
+require_once "process_form_register.php";
 
-	$user = getUserToken();
-	if($user != null) {
-		header('Location: ../');
-		die();
-	}
+$user = getUserToken();
+if ($user != null) {
+    header("Location: ../");
+    die();
+}
 ?>
 
 <!DOCTYPE html>
@@ -32,21 +32,21 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 <body style="background-image: url(../../assets/photos/ecommerce.jpeg); background-size: cover; background-repeat: no-repeat;">
-	<div class="container">
+	<div class="">
 		<div class="panel panel-primary" style="width: 480px; margin: 0px auto; margin-top: 50px; background-color: white; padding: 10px; border-radius: 5px; box-shadow: 2px 2px #9ac9f5;">
 			<div class="panel-heading">
 				<h2 class="text-center">Đăng Ký Tài Khoản</h2>
-				<h5 style="color: red;" class="text-center"><?=$msg?></h5>
+				<h5 style="color: red;" class="text-center"><?= $msg ?></h5>
 			</div>
 			<div class="panel-body">
 				<form method="post" onsubmit="return validateForm();">
 					<div class="form-group">
 					  <label for="usr">Họ & Tên:</label>
-					  <input required="true" type="text" class="form-control" id="usr" name="fullname" value="<?=$fullname?>">
+					  <input required="true" type="text" class="form-control" id="usr" name="fullname" value="<?= $fullname ?>">
 					</div>
 					<div class="form-group">
 					  <label for="email">Email:</label>
-					  <input required="true" type="email" class="form-control" id="email" name="email" value="<?=$email?>">
+					  <input required="true" type="email" class="form-control" id="email" name="email" value="<?= $email ?>">
 					</div>
 					<div class="form-group">
 					  <label for="pwd">Mật Khẩu:</label>
