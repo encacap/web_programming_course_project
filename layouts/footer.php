@@ -1,67 +1,90 @@
-<footer style="background-color: #81d742 !important;">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4">
-				<h4>GIỚI THIỆU</h4>
-				<ul>
-					<li>LIÊN HỆ CÔNG TY CỔ PHẦN ZICZAC GROUP</li>
-					<li><i class="bi bi-mailbox2"></i> gokisoft.com@gmail.com</li>
-					<li><i class="bi bi-telephone-fill"></i> 123456789</li>
-					<li><i class="bi bi-map-fill"></i> Ha Noi, Viet Nam</li>
-					<li>Chúng tôi luôn tiên phong trong lĩnh vực xậy dựng website cho các doanh nghiệp và của hàng. Chúng tôi luôn nỗ lực để tạo ra sản phẩm có chất lượng tốt nhất cho khách hàng.</li>
-				</ul>
-			</div>
-			<div class="col-md-4">
-				<h4>SẢN PHẨM MỚI NHẤT</h4>
-				<ul>
-					<li>LIÊN HỆ CÔNG TY CỔ PHẦN ZICZAC GROUP</li>
-					<li>Email: gokisoft.com@gmail.com</li>
-					<li>Phone: 123456789</li>
-					<li>Chúng tôi luôn tiên phong trong lĩnh vực xậy dựng website cho các doanh nghiệp và của hàng. Chúng tôi luôn nỗ lực để tạo ra sản phẩm có chất lượng tốt nhất cho khách hàng.</li>
-				</ul>
-			</div>
-			<div class="col-md-4">
-				<h4>TIN TỨC MỚI NHẤT</h4>
-				<ul>
-					<li>LIÊN HỆ CÔNG TY CỔ PHẦN ZICZAC GROUP</li>
-					<li>Email: gokisoft.com@gmail.com</li>
-					<li>Phone: 123456789</li>
-					<li>Chúng tôi luôn tiên phong trong lĩnh vực xậy dựng website cho các doanh nghiệp và của hàng. Chúng tôi luôn nỗ lực để tạo ra sản phẩm có chất lượng tốt nhất cho khách hàng.</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div style="background-color: #3f9609; width: 100%; text-align: center; padding: 20px;">
-		© 2018 Zic Zac Group . Được thiết kế bời ZicZac. All rights reserved.
-	</div>
+<footer class="px-4 lg:px-10 pt-4 lg:pt-10 bg-gray-100 lg:bg-none">
+    <div class="lg:flex">
+        <div class="flex justify-between items-center">
+            <a href="/" class="flex items-center text-blue-500">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="w-12">
+                        <path d="M9 22h6c5 0 7-2 7-7V9c0-5-2-7-7-7H9C4 2 2 4 2 9v6c0 5 2 7 7 7Z" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" class="stroke-current"></path>
+                        <path
+                            d="M15.5 9.75a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM8.5 9.75a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM8.4 13.3h7.2c.5 0 .9.4.9.9 0 2.49-2.01 4.5-4.5 4.5s-4.5-2.01-4.5-4.5c0-.5.4-.9.9-.9Z"
+                            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"
+                            class="stroke-current"></path>
+                    </svg>
+                </div>
+                <div class="ml-4  uppercase text-blue-500">
+                    <div class="mt-1 font-semibold text-xs">Bài tập lớn</div>
+                    <div class="font-bold text-xl">Nhóm Đỗng</div>
+                </div>
+            </a>
+        </div>
+        <div class="block lg:hidden w-full h-0.5 bg-gray-200 mt-4"></div>
+        <div class="flex-1 lg:flex justify-end items-center mt-4 lg:mt-0">
+            <div class="flex items-center">
+                <div class="flex-shrink-0 w-12 lg:w-auto mr-4 lg:mr-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="w-7 lg:w-9 mx-auto">
+                        <path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10ZM20.59 22c0-3.87-3.85-7-8.59-7s-8.59 3.13-8.59 7"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <div class="text-sm">18511200xx</div>
+                    <div class="font-semibold">Nguyễn Tấn Ngọc Đỗng</div>
+                </div>
+            </div>
+            <div class="flex items-center mt-3 lg:mt-0 lg:ml-16">
+                <div class="flex-shrink-0 w-12 lg:w-auto mr-4 lg:mr-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="w-7 lg:w-9 mx-auto">
+                        <path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10ZM20.59 22c0-3.87-3.85-7-8.59-7s-8.59 3.13-8.59 7"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <div class="text-sm">1851120020</div>
+                    <div class="font-semibold">
+                        Nguyễn Khắc Khánh
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center mt-3 lg:mt-0 lg:ml-16">
+                <div class="flex-shrink-0 w-12 lg:w-auto mr-4 lg:mr-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="w-7 lg:w-9 mx-auto">
+                        <path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10ZM20.59 22c0-3.87-3.85-7-8.59-7s-8.59 3.13-8.59 7"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <div class="text-sm">18511200xx</div>
+                    <div class="font-semibold">
+                        Trần Minh Tân
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="border-t-2 mt-4 lg:mt-10 py-4 text-center">
+        Copyrights © 2021. All rights reserved by
+        <a href="https://www.facebook.com/khackhanh.encacap/" class="font-semibold">Nhóm Đỗng</a>
+    </div>
 </footer>
 
-<?php
-if(!isset($_SESSION['cart'])) {
-	$_SESSION['cart'] = [];
-}
-$count = 0;
-// var_dump($_SESSION['cart']);
-foreach($_SESSION['cart'] as $item) {
-	$count += $item['num'];
-}
-?>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script type="text/javascript">
-	function addCart(productId, num) {
-		$.post('api/ajax_request.php', {
-			'action': 'cart',
-			'id': productId,
-			'num': num
-		}, function(data) {
-			location.reload()
-		})
-	}
+function addCart(productId, num) {
+    $.post('api/ajax_request.php', {
+        'action': 'cart',
+        'id': productId,
+        'num': num
+    }, function(data) {
+        location.reload()
+    })
+}
 </script>
-<!-- Cart start -->
-<span class="cart_icon">
-	<span class="cart_count"><?=$count?></span>
-	<a href="cart.php"><img src="https://gokisoft.com/img/cart.png"></a>
-</span>
-<!-- Cart stop -->
+
 </body>
+
 </html>
