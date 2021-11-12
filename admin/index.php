@@ -1,8 +1,5 @@
 <?php
-	$title = 'Dashboard Page';
-	$baseUrl = '';
-	require_once('layouts/header.php');
-?>
+header("Location: " . "/admin/category"); ?>
 
 <div class="row">
 	<div class="col-md-12">
@@ -10,6 +7,5 @@
 	</div>
 </div>
 
-<?php
-	require_once('layouts/footer.php');
+<?php require_once "layouts/footer.php";
 ?>
