@@ -1,0 +1,42 @@
+{
+    "name": "web_programming_project",
+    "version": "1.0.0",
+    "description": "Web Programming Project",
+    "main": "index.js",
+    "scripts": {
+        "postcss": "postcss ./resources/css/app.css -d ./assets/css/ --map --ext .min.css",
+        "build:css": "cross-env NODE_ENV=production npm run postcss",
+        "build:css:full": "cross-env NODE_ENV=development npm run postcss",
+        "build:js": "cross-env NODE_ENV=production webpack --config webpack.config.js",
+        "build:copy": "node ./build/ -files['CNAME'] -folders['build','node_modules','resources']",
+        "watch:js": "npm run build:js -- -w",
+        "watch:css": "npm run build:css -- -w",
+        "build": "cross-env NODE_ENV=production npm run build:css && cross-env NODE_ENV=production npm run build:js && npm run build:copy"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/encacap/web_programming_project.git"
+    },
+    "keywords": [
+        "encacap"
+    ],
+    "author": "Nguyen Khac Khanh (Encacap)",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/encacap/web_programming_project/issues"
+    },
+    "homepage": "https://github.com/encacap/web_programming_project#readme",
+    "devDependencies": {
+        "@prettier/plugin-php": "^0.17.6",
+        "autoprefixer": "^10.4.0",
+        "cross-env": "^7.0.3",
+        "cssnano": "^5.0.10",
+        "postcss": "^8.3.11",
+        "postcss-cli": "^9.0.2",
+        "postcss-import": "^14.0.2",
+        "postcss-nested": "^5.0.6",
+        "prettier": "^2.4.1",
+        "webpack": "^5.63.0",
+        "webpack-cli": "^4.9.1"
+    }
+}
