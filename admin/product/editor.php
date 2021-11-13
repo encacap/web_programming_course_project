@@ -32,8 +32,8 @@ $categoryItems = executeResult($sql);
 <!-- include summernote css/js -->
 <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
-<link rel="old stylesheet" href="/assets/css/dashboard.min.css" title="bootstrap" />
-<link rel="newest stylesheet" href="/assets/css/app.min.css">
+<link rel="old stylesheet" href="../../assets/css/dashboard.min.css" title="bootstrap" />
+<link rel="newest stylesheet" href="../../assets/css/app.min.css">
 <style>
 	.note-editor {
 		border-radius: 6px;

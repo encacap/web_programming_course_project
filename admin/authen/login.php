@@ -23,9 +23,9 @@ if ($user != null) {
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   
-  <link rel="shortcut icon" href="/assets/icons/svg/emoji-happy-bold.svg">
-  <link rel="stylesheet" href="/assets/css/home.min.css">
-  <link rel="stylesheet" href="/assets/css/app.min.css">
+  <link rel="shortcut icon" href="../../assets/icons/svg/emoji-happy-bold.svg">
+  <link rel="stylesheet" href="../../assets/css/home.min.css">
+  <link rel="stylesheet" href="../../assets/css/app.min.css">
 
 </head>
 <body>
@@ -75,7 +75,7 @@ if ($user != null) {
 					  <input required="true" type="password" class="w-full ring-1 ring-gray-200 outline-none my-4 px-4 py-2 rounded-md focus:ring-blue-500" id="pwd" name="password" minlength="6">
 					</div>
 					<div class="flex">
-						<a href="register.php" class="flex justify-center items-center w-full mt-4 border-2 border-gray-200 bg-gray-100 rounded-md px-10 py-2 font-semibold hover:bg-gray-200 duration-200 ring-2 ring-transparent focus:ring-blue-200 mr-10">Đăng ký</a>
+						<a href="./register.php" class="flex justify-center items-center w-full mt-4 border-2 border-gray-200 bg-gray-100 rounded-md px-10 py-2 font-semibold hover:bg-gray-200 duration-200 ring-2 ring-transparent focus:ring-blue-200 mr-10">Đăng ký</a>
 						<button class="flex justify-center items-center w-full mt-4 border-2 border-blue-500 bg-blue-500 rounded-md px-10 py-2 text-white font-semibold hover:bg-blue-700 duration-200 ring-2 ring-transparent focus:ring-blue-200">Đăng Nhập</button>
 					</div>
 				</form>

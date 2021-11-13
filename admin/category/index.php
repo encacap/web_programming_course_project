@@ -144,7 +144,7 @@ foreach ($data as $item) {
 				}
 				return;
 			}
-			location.href = '/admin/category/';
+			location.href = './';
 		})
 	}
 	function showModal() {

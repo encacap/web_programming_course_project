@@ -8,7 +8,7 @@ $category_id = getGet("id");
 $sql = "SELECT name FROM Category WHERE id = " . $categoryId . "";
 $categoryName = executeResult($sql);
 
-$sql = "SELECT id FROM Product WHERE category_id = " . $categoryId . "";
+$sql = "SELECT id FROM Product WHERE category_id = " . $categoryId . " AND Product.deleted = 0" ;
 $items = executeResult($sql);
 $totalItems = count($items);
 $page = 1;
@@ -28,6 +28,7 @@ if ($category_id == null || $category_id == "") {
         "SELECT Product.*, Category.name AS category_name 
 		FROM Product LEFT JOIN Category 
 		ON Product.category_id = Category.id 
+        WHERE Product.deleted = 0
 		ORDER BY Product.updated_at DESC 
 		LIMIT " .
         ($page - 1) * ITEMS_PER_PAGE .
@@ -41,6 +42,7 @@ if ($category_id == null || $category_id == "") {
 		FROM Product LEFT JOIN Category 
 		ON Product.category_id = Category.id 
 		WHERE Product.category_id = $category_id 
+        AND Product.deleted = 0
 		ORDER BY Product.updated_at DESC 
 		LIMIT " .
         ($page - 1) * ITEMS_PER_PAGE .
@@ -93,7 +95,7 @@ $latestItems = executeResult($sql);
                 '</p></a>
 							<p class="my-1" style="color: red; font-weight: bold;">' .
                 number_format($item["discount"]) .
-                ' VND</p>
+                ' VND <span style="color:black; font-size: 12px; font-weight: normal; -webkit-text-stroke: 1px black; text-decoration-line: line-through">'.number_format($item["price"]) .' VND </span></p>
 							<div><button class="flex items-center justify-center w-full mt-3 border-2 border-blue-500 rounded-md py-2 text-blue-500 duration-200 hover:text-white hover:bg-blue-500" onclick="addCart(' .
                 $item["id"] .
                 ', 1)"><div class=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="w-7 mr-2"><path d="M7.5 7.67V6.7c0-2.25 1.81-4.46 4.06-4.67a4.5 4.5 0 0 1 4.94 4.48v1.38M9 22h6c4.02 0 4.74-1.61 4.95-3.57l.75-6C20.97 9.99 20.27 8 16 8H8c-4.27 0-4.97 1.99-4.7 4.43l.75 6C4.26 20.39 4.98 22 9 22Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.495 12h.01M8.495 12h.008" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div> Thêm vào giỏ hàng</button></div>

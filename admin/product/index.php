@@ -36,7 +36,11 @@ $data = executeResult($sql);
 				</th>
 				<th scope="col"
 					class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-					Đơn giá
+					Giá gốc
+				</th>
+				<th scope="col"
+					class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+					Giảm giá
 				</th>
 				<th scope="col"
 					class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
@@ -61,6 +65,10 @@ foreach ($data as $item) {
 					<td class="w-1/3 px-6 py-4 whitespace-nowrap">' .
         $item["title"] .
         '</td>
+					<td class="px-6 py-4 whitespace-nowrap">' .
+        number_format($item["price"]) .
+        ' VNĐ</td>
+		</td>
 					<td class="px-6 py-4 whitespace-nowrap">' .
         number_format($item["discount"]) .
         ' VNĐ</td>

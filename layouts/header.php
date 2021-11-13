@@ -5,6 +5,7 @@ require_once "database/dbhelper.php";
 
 $sql = "SELECT * FROM Category";
 $menuItems = executeResult($sql);
+if(!isset($categoryId)) $categoryId = null;
 ?>
 
 <!DOCTYPE html>
@@ -18,9 +19,9 @@ $menuItems = executeResult($sql);
     } else {
         echo "Trang chủ";
     } ?> - Đặc sản Quảng Ngãi</title>
-    <link rel="shortcut icon" href="/assets/icons/svg/emoji-happy-bold.svg">
-    <link rel="stylesheet" href="/assets/css/home.min.css">
-    <link rel="stylesheet" href="/assets/css/app.min.css">
+    <link rel="shortcut icon" href="./assets/icons/svg/emoji-happy-bold.svg">
+    <link rel="stylesheet" href="./assets/css/home.min.css">
+    <link rel="stylesheet" href="./assets/css/app.min.css">
 </head>
 
 <body>
@@ -28,7 +29,7 @@ $menuItems = executeResult($sql);
     <div class="w-full fixed top-0 left-0 right-0 z-50 shadow-md px-4 lg:px-10 bg-white">
         <ul class="nav flex items-center justify-between h-20">
             <li class="nav-item mt-0">
-                <a href="/" class="flex items-center text-blue-500">
+                <a href="./" class="flex items-center text-blue-500">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="w-12">
                             <path d="M9 22h6c5 0 7-2 7-7V9c0-5-2-7-7-7H9C4 2 2 4 2 9v6c0 5 2 7 7 7Z" stroke-width="1.5"

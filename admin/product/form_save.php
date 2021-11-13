@@ -21,14 +21,16 @@ if(!empty($_POST)) {
 		
 		execute($sql);
 
-		header('Location: index.php');
+		// header('Location: index.php');\
+		echo '<script>location.href="./" </script>';
 		die();
 	} else {
 		//insert
 		$sql = "insert into Product(thumbnail, title, price, discount, description, updated_at, created_at, deleted, category_id) values ('$thumbnail', '$title', '$price', '$discount', '$description', '$updated_at', '$created_at', 0, $category_id)";
 		execute($sql);
 
-		header('Location: index.php');
+		// header('Location: index.php');
+		echo '<script>location.href="./" </script>';
 		die();
 	}
 }

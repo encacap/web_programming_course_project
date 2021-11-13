@@ -1,5 +1,5 @@
 <?php
-header("Location: " . "/admin/category"); ?>
+header("Location: " . "./category"); ?>
 
 <div class="row">
 	<div class="col-md-12">

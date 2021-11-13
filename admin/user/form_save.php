@@ -28,7 +28,8 @@ if(!empty($_POST)) {
 				$sql = "update User set fullname = '$fullname', email = '$email', phone_number = '$phone_number', address = '$address', updated_at = '$updated_at', role_id = $role_id where id = $id";
 			}
 			execute($sql);
-			header('Location: index.php');
+			// header('Location: index.php');
+			echo '<script>location.href="./" </script>';
 			die();
 		}
 	} else {
@@ -39,7 +40,8 @@ if(!empty($_POST)) {
 			//insert
 			$sql = "insert into User(fullname, email, phone_number, address, password, role_id, created_at, updated_at, deleted) values ('$fullname', '$email', '$phone_number', '$address', '$password', '$role_id', '$created_at', '$updated_at', 0)";
 			execute($sql);
-			header('Location: index.php');
+			// header('Location: index.php');
+			echo '<script>location.href="./" </script>';
 			die();
 		} else {
 			//Tai khoan da ton tai -> failed
