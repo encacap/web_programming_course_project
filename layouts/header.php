@@ -3,7 +3,7 @@ session_start();
 require_once "utils/utility.php";
 require_once "database/dbhelper.php";
 
-$sql = "SELECT * FROM Category";
+$sql = "SELECT id, name FROM Category";
 $menuItems = executeResult($sql);
 if(!isset($categoryId)) $categoryId = null;
 ?>

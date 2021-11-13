@@ -58,7 +58,7 @@ $latestItems = executeResult($sql);
     <div class="mt-4 py-3">
         <span class="text-gray-400">Trang chủ</span>
         <span class="text-gray-400">/</span>
-        <a href="category.php?id=<?= $categoryId ?>" class="hover:text-blue-500">Phụ nữ</a>
+        <!-- <a href="category.php?id=<?= $categoryId ?>" class="hover:text-blue-500">Phụ nữ</a> -->
     </div>
     <div class="mt-0">
         <div class="text-xl uppercase">Tất cả sản phẩm thuộc danh mục <?= $categoryName[0][

@@ -32,8 +32,8 @@ $latestItems = executeResult($sql);
             <div class="pb-2">
                 <a href="/" class="text-gray-400 hover:text-blue-500">Trang chủ</a>
                 <span class="text-gray-400">/</span>
-                <a href="category.php?id=<?= $categoryId ?>" class="text-gray-400 hover:text-blue-500">Phụ nữ</a>
-                <span class="text-gray-400">/</span>
+                <!-- <a href="category.php?id=<?= $categoryId ?>" class="text-gray-400 hover:text-blue-500">Phụ nữ</a> -->
+                <!-- <span class="text-gray-400">/</span> -->
             </div>
             <h2 class="text-2xl py-1"><?= $product["title"] ?></h2>
             <div class="w-20 h-1 bg-gray-200 mt-5"></div>

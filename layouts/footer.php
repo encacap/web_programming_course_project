@@ -29,7 +29,7 @@
                     </svg>
                 </div>
                 <div>
-                    <div class="text-sm">18511200xx</div>
+                    <div class="text-sm">1851120007</div>
                     <div class="font-semibold">Nguyễn Tấn Ngọc Đỗng</div>
                 </div>
             </div>
@@ -57,7 +57,7 @@
                     </svg>
                 </div>
                 <div>
-                    <div class="text-sm">18511200xx</div>
+                    <div class="text-sm">1851120044</div>
                     <div class="font-semibold">
                         Trần Minh Tân
                     </div>

@@ -32,7 +32,8 @@ $latestItems = executeResult($sql);
     <h1 class="text-center text-2xl font-semibold tracking-wide">SẢN PHẨM MỚI NHẤT</h1>
     <div class="mx-auto w-20 h-1 mt-6 rounded-md bg-blue-500"></div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 mt-8">
-        <?php foreach ($latestItems as $item) {
+        <?php 
+        foreach ($latestItems as $item) {
             echo '
 			<div class="rounded-lg border-2 border-gray-100 overflow-hidden p-4 bg-white duration-200 hover:border-blue-500 shadow-sm">
 				<a href="detail.php?id=' .
@@ -61,6 +62,8 @@ $latestItems = executeResult($sql);
     </div>
 </div>
 <?php
+$sql = "SELECT id, name FROM Category";
+$menuItems = executeResult($sql);
 $count = 0;
 foreach ($menuItems as $item) {
 
@@ -73,9 +76,9 @@ foreach ($menuItems as $item) {
         $item["id"] .
         " ORDER BY Product.updated_at desc limit 0, 5" ;
     $items = executeResult($sql);
-    if ($items == null || count($items) < 4) {
-        continue;
-    }
+    // if ($items == null || count($items) < 4) {
+    //     continue;
+    // }
     ?>
 <div class=<?= $count++ % 2 == 0 ? "bg-gray-100" : "bg-white" ?>>
     <div class="py-10 px-4 lg:px-10">
@@ -110,7 +113,8 @@ foreach ($menuItems as $item) {
                     $pItem["id"] .
                     ', 1)"><div class=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="w-7 mr-2"><path d="M7.5 7.67V6.7c0-2.25 1.81-4.46 4.06-4.67a4.5 4.5 0 0 1 4.94 4.48v1.38M9 22h6c4.02 0 4.74-1.61 4.95-3.57l.75-6C20.97 9.99 20.27 8 16 8H8c-4.27 0-4.97 1.99-4.7 4.43l.75 6C4.26 20.39 4.98 22 9 22Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.495 12h.01M8.495 12h.008" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div> Thêm vào giỏ hàng</button></div>
 				</div>';
-            } ?>
+            } 
+            ?>
         </div>
         <div class="flex justify-center mt-10">
             <a href="category.php?id=<?= $item["id"] ?>" class="
